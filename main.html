@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Grid with Drag & Drop</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Drag and Drop</title>
+  <style>
+    .dropzone {
+      width: 100px;
+      height: 100px;
+      border: 2px dashed #ccc;
+      display: inline-block;
+      margin: 10px;
+    }
+    .image {
+      width: 90px;
+      height: 90px;
+    }
+  </style>
 </head>
 <body>
-    <div class="grid-container">
-        <!-- Each div has both ID and data-id to satisfy test requirements -->
-        <div id="drag1" data-id="div1" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/10/200/200" alt="Image 1">
-        </div>
-        <div id="drag2" data-id="div2" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/20/200/200" alt="Image 2">
-        </div>
-        <div id="drag3" data-id="div3" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/30/200/200" alt="Image 3">
-        </div>
-        <div id="drag4" data-id="div4" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/40/200/200" alt="Image 4">
-        </div>
-        <div id="drag5" data-id="div5" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/50/200/200" alt="Image 5">
-        </div>
-        <div id="drag6" data-id="div6" class="grid-item" draggable="true">
-            <img src="https://picsum.photos/id/60/200/200" alt="Image 6">
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div id="div1" class="dropzone"><img id="drag1" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+  <div id="div2" class="dropzone"><img id="drag2" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+  <div id="div3" class="dropzone"><img id="drag3" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+  <div id="div4" class="dropzone"><img id="drag4" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+  <div id="div5" class="dropzone"><img id="drag5" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+  <div id="div6" class="dropzone"><img id="drag6" src="https://via.placeholder.com/90" draggable="true" class="image" /></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
